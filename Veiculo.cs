@@ -29,6 +29,7 @@ namespace GerenciadorDeVeiculos
         }
         public virtual void MostrarDetalhes()
         {
+            Console.WriteLine("");
 
         }
 
