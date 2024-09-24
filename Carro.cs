@@ -16,14 +16,15 @@ namespace GerenciadorDeVeiculos
             NumeroDePortas = numeroDePortas;
         }
 
+        public override double CalcularEficiencia()
+        {
 
+        }
 
-
-
-
-
-
-
+        public override void MostrarDetalhes()
+        {
+            Console.WriteLine($"Marca: {Marca}, Modelo: {Modelo}, Ano: {Ano}, Combustivels {Combustivel}, Numero de portas {NumeroDePortas}");
+        }
 
     }
 }

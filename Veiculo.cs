@@ -9,11 +9,8 @@ namespace GerenciadorDeVeiculos
     public class Veiculo
     {
         public string Marca { get; set; }
-
         public string Modelo { get; set; }
-
         public int Ano { get; set; }
-
         public string Combustivel { get; set; }
 
        public Veiculo(string marca,string modelo,int ano,string combustivel ) 
@@ -23,14 +20,13 @@ namespace GerenciadorDeVeiculos
             Ano = ano; 
             Combustivel= combustivel;
         }   
-        public virtual double CaucularEficiencia()
+        public virtual double CalcularEficiencia()
         {
             return 0; 
         }
         public virtual void MostrarDetalhes()
         {
-            Console.WriteLine("");
-
+            Console.WriteLine($"Marca: {Marca}, Modelo: {Modelo}, Ano: {Ano}, Combustivels {Combustivel}");
         }
 
     }
